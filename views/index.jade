@@ -1,0 +1,29 @@
+extends layouts/normal
+
+block code
+  -var title = "首页"
+  -var class_on_html = 'index-page'
+
+
+append css
+  link(rel="stylesheet", href="/public/css/index.css")
+
+block mainBody
+  .main-logo-wrapper
+    img.main-logo(src="/public/images/google_logo.png", alt="")
+
+  .main-form
+    form(action="/search",method="get")
+      .row
+        .col-md-10
+          input.search-input.form-control(
+            type="text",
+            value="",
+            name="q",
+            placeholder="手气不错哦 ^_^"
+          )
+
+        input.btn.btn-success.btn-submit.col-md-2(
+          type="submit",
+          value="Google一下"
+        )

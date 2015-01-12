@@ -1,0 +1,20 @@
+//- 普通页面
+extends pure
+
+block body
+  .navbar.navbar-inverse.navbar-fixed-top
+    .container
+      a.navbar-brand(href="#") My-Google
+      ul.nav.navbar-nav
+        li.active
+          a(href="/") 首页
+
+      ul.nav.navbar-nav.pull-right
+        li
+          a(
+            href="http://magicdawn.ml",
+            target="_blank"
+          ) By Magicdawn
+
+  .container
+    block mainBody

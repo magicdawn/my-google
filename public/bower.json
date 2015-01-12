@@ -1,0 +1,7 @@
+{
+  "name": "my-google",
+  "dependencies": {
+    "jquery": "1.x",
+    "bootstrap": "3.x"
+  }
+}
