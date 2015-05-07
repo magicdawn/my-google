@@ -1,18 +1,19 @@
 {
   "name": "my-google",
   "engines": {
-    "node": "0.11.14"
+    "iojs": "1.6.*"
   },
   "scripts": {
-    "start": "node --harmony app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "bluebird": "^2.6.2",
     "co": "^4.1.0",
     "express": "^4.10.7",
-    "less": "^2.2.0",
     "jade": "^1.8.2",
+    "less": "^2.2.0",
     "morgan": "^1.5.1",
+    "ractive-engine": "0.0.2",
     "serve-favicon": "^2.2.0",
     "superagent": "^0.21.0",
     "superagent-bluebird-promise": "^0.5.1"

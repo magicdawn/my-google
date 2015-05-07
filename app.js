@@ -5,6 +5,7 @@ global.Promise = require('bluebird');
 global.co = require('co');
 global.request = require('superagent');
 require('superagent-bluebird-promise');
+var ractive = require('ractive-engine');
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 /**
@@ -33,7 +34,8 @@ app.use(['/public', '/'], express.static(path.join(__dirname, "public")));
  * settings
  */
 app.set('views', path.join(__dirname, "views"));
-app.set('view engine', 'jade');
+app.set('view engine', 'html');
+app.engine('.html',ractive.express());
 
 /**
  * Router
