@@ -13,7 +13,7 @@
     "jade": "^1.8.2",
     "less": "^2.2.0",
     "morgan": "^1.5.1",
-    "ractive-engine": "0.0.2",
+    "ractive-engine": "0.0.3",
     "serve-favicon": "^2.2.0",
     "superagent": "^0.21.0",
     "superagent-bluebird-promise": "^0.5.1"

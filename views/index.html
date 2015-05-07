@@ -5,10 +5,18 @@
 <link rel="stylesheet" href="/public/css/index.css">
 {{/append}}
 
-{{#prepend title}}
-首页 {{/prepend}}
+{{! 在html标签上的className }}
+{{#append htmlClass}}
+index-page
+{{/append}}
 
-<img src="/public/images/google_logo.png" alt="" class="main-logo" />
+{{#prepend title}}
+首页
+{{/prepend}}
+
+<div class="main-logo-wrapper">
+  <img src="/public/images/google_logo.png" alt="" class="main-logo" />
+</div>
 
 <div class="main-form">
   <form action="/search" method="get">
