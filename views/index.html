@@ -1,0 +1,34 @@
+{{#extend './layouts/normal'}}
+{{/extend}}
+
+{{#append css}}
+<link rel="stylesheet" href="/public/css/index.css">
+{{/append}}
+
+{{! 在html标签上的className }}
+{{#append htmlClass}}
+index-page
+{{/append}}
+
+{{#prepend title}}
+首页
+{{/prepend}}
+
+<div class="main-logo-wrapper">
+  <img src="/public/images/google_logo.png" alt="" class="main-logo" />
+</div>
+
+<div class="main-form">
+  <form action="/search" method="get">
+
+    <div class="row">
+
+      <div class="col-md-10">
+        <input type="text" class="search-input form-control"
+          value="" name="q" placeholder="手气不错哦 ^_^">
+      </div>
+
+      <input type="submit" class="btn btn-success btn-submit col-md-2" value="Google一下">
+    </div>
+  </form>
+</div>
