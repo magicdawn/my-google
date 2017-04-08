@@ -1,5 +1,7 @@
 # Google Search
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/magicdawn/my-google.svg)](https://greenkeeper.io/)
+
 ## URL
 http://google.magicdawn.ml
 http://magicdawn-google.herokuapp.com/
